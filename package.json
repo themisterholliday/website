@@ -10,7 +10,7 @@
 		"build": "run-s --print-name build:svelte copy-files",
 		"build:svelte": "vite build",
 		"preview": "vite preview",
-		"test": "svelte-kit sync & playwright test",
+		"test": "svelte-kit sync && playwright test",
 		"test:ui": "svelte-kit sync && playwright test --ui",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
