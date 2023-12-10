@@ -38,6 +38,9 @@ jobs:
       - name: Setup DB
         run: pnpm db:generate
 
+      - name: Seed/preheat db
+        run: pnpm preheat
+
       - name: Install playwright browsers
         run: pnpx playwright install --with-deps
 

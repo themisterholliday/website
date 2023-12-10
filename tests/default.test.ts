@@ -18,6 +18,7 @@ test('Got about page', async ({ page }) => {
 	// Check for an h1 with the text "All Episodes"
 	await expect(page.locator('h1:has-text("About Syntax")')).toBeVisible();
 });
+
 test('Got to podcast detail page', async ({ page }) => {
 	await page.goto('/');
 	// Click the navigation link named "Shows"
