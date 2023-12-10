@@ -18,6 +18,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Start Default mysql
+        run: sudo mysql --user=root --password=root
+
       - name: Checkout code
         uses: actions/checkout@v2
 

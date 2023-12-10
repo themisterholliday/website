@@ -12,11 +12,11 @@ import type { PrerecordedTranscriptionResponse } from '@deepgram/sdk/dist/types'
 const deepgramApiKey = process.env.DEEPGRAM_SECRET;
 if (!deepgramApiKey) {
 	console.error('Please set the DEEPGRAM_SECRET environment variable.');
-	process.exit(1);
+	// process.exit(1);
 }
 
 // Initializes the Deepgram SDK
-export const deepgramClient = new Deepgram(deepgramApiKey, 'api.deepgram.com');
+// export const deepgramClient = new Deepgram(deepgramApiKey, 'api.deepgram.com');
 
 export async function get_transcript(showNumber: number) {
 	const show = await prisma.show.findUnique({
